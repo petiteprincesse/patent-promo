@@ -1,7 +1,8 @@
+"use client";
 import ArrowRight from "@/assets/arrow-right.svg";
 import Logo from "@/assets/logo.png";
-import Image from "next/image";
-import MenuIcon from '@/assets/menu.svg'
+import { motion } from "framer-motion";
+import MenuIcon from "@/assets/menu.svg";
 export const Header = () => {
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
@@ -12,7 +13,7 @@ export const Header = () => {
               href="https://innoagency.ru/news/news/v_moskve_podveli_itogi_hakatona_lidery_cifrovoy_transformacii_20240630"
               target="_blank"
             >
-              Проект-победитель конкурса "Лидеры цифровой трансформации - 2024"
+              Проект-победитель конкурса 'Лидеры цифровой трансформации - 2024'
             </a>
           </p>
           <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
@@ -22,7 +23,7 @@ export const Header = () => {
         <div className="py-5">
           <div className="container">
             <div className="flex items-center justify-between">
-              <Image src={Logo} alt="МИК" width={150} />
+              <motion.img src={Logo.src} alt="МИК" width={150} />
               <MenuIcon className="h-5 w-5 md:hidden" />
               <nav className="hidden md:flex gap-6 text-black/60 items-center">
                 <a href="#product">Приложение</a>

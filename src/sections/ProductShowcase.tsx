@@ -2,7 +2,6 @@
 import ProductImage from "@/assets/product-image.png";
 import PyramidImage from "@/assets/pyramid.png"
 import TubeImage from '@/assets/tube.png'
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 export const ProductShowcase = () => {
@@ -31,7 +30,7 @@ export const ProductShowcase = () => {
           </p>
         </div>
         <div className="relative">
-          <Image src={ProductImage} alt="Product image" className="mt-10" />
+          <motion.img src={ProductImage.src} alt="Product image" className="mt-10" />
           <motion.img
             src={PyramidImage.src}
             alt="Pyramid image"

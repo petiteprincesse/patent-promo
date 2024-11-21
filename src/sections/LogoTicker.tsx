@@ -4,7 +4,6 @@ import MayorsProjectLogo from "@/assets/MayorsProjectLogo.png";
 import InnovationDepartmentLogo from "@/assets/InnovationDepartmentLogo.png";
 import InnovationAgencyLogo from "@/assets/InnovationAgencyLogo.png";
 import ClusterLogo from "@/assets/ClusterLogo.png";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const LogoTicker = () => {
@@ -24,54 +23,54 @@ export const LogoTicker = () => {
               repeatType: "loop",
             }}
           >
-            <Image
-              src={LeadersLogo}
+            <motion.img
+              src={LeadersLogo.src}
               alt="Leaders logo"
               className="logo-ticker-image min-h-10"
             />
-            <Image
-              src={MayorsProjectLogo}
+            <motion.img
+              src={MayorsProjectLogo.src}
               alt="Mayors project logo"
               className="logo-ticker-image min-h-10"
             />
-            <Image
-              src={InnovationDepartmentLogo}
+            <motion.img
+              src={InnovationDepartmentLogo.src}
               alt="Innovation department logo"
               className="logo-ticker-image min-h-10"
             />
-            <Image
-              src={InnovationAgencyLogo}
+            <motion.img
+              src={InnovationAgencyLogo.src}
               alt="Innovation agency logo"
               className="logo-ticker-image min-h-10"
             />
-            <Image
-              src={ClusterLogo}
+            <motion.img
+              src={ClusterLogo.src}
               alt="Cluster logo"
               className="logo-ticker-image min-h-10"
             />
-            <Image
-              src={LeadersLogo}
+            <motion.img
+              src={LeadersLogo.src}
               alt="Leaders logo"
               className="logo-ticker-image min-h-10"
             />
             {/* Второй блок логотипов для отсутствия "дырок" в анимации */}
-            <Image
-              src={MayorsProjectLogo}
+            <motion.img
+              src={MayorsProjectLogo.src}
               alt="Mayors project logo"
               className="logo-ticker-image min-h-10"
             />
-            <Image
-              src={InnovationDepartmentLogo}
+            <motion.img
+              src={InnovationDepartmentLogo.src}
               alt="Innovation department logo"
               className="logo-ticker-image min-h-10"
             />
-            <Image
-              src={InnovationAgencyLogo}
+            <motion.img
+              src={InnovationAgencyLogo.src}
               alt="Innovation agency logo"
               className="logo-ticker-image min-h-10"
             />
-            <Image
-              src={ClusterLogo}
+            <motion.img
+              src={ClusterLogo.src}
               alt="Cluster logo"
               className="logo-ticker-image min-h-10"
             />

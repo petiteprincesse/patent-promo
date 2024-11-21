@@ -4,7 +4,7 @@ import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
 import avatar4 from "@/assets/avatar-4.png";
 import avatar5 from "@/assets/avatar-5.png";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import React from "react";
 const teamMembers = [
   {
@@ -47,9 +47,9 @@ const TestimonialsColumn = (props: {
   <div className={props.className}>
     <div className="flex flex-wrap justify-center gap-6 pb-6">
       {props.teamMembers.map(({ text, imageSrc, name, username }) => (
-        <div className="card">
+        <div className="card" key={username}>
           <div className="flex items-center gap-2">
-            <Image
+            <motion.img
               src={imageSrc}
               alt={name}
               width={40}
