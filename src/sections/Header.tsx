@@ -25,13 +25,15 @@ export const Header = () => {
               <Image src={Logo} alt="МИК" width={150} />
               <MenuIcon className="h-5 w-5 md:hidden" />
               <nav className="hidden md:flex gap-6 text-black/60 items-center">
-                <a href="">one</a>
-                <a href="">one</a>
-                <a href="">one</a>
-                <a href="">one</a>
-                <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tigh">
-                  Lalala
-                </button>
+                <a href="#product">Приложение</a>
+                <a href="#command">Команда</a>
+                <a href="#algorithm">Алгоритм анализа</a>
+                <a
+                  href="#product"
+                  className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tigh"
+                >
+                  Подробнее
+                </a>
               </nav>
             </div>
           </div>

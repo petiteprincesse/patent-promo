@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export const CallToAction = () => {
+export const Algorithm = () => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -17,10 +17,13 @@ export const CallToAction = () => {
     <section
       ref={sectionRef}
       className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip"
+      id="#algorithm"
     >
       <div className="container">
         <div className="section-heading relative">
-          <h2 className="section-title">Lalalalal</h2>
+          <h2 className="section-title" id="algorithm">
+            Алгоритм анализа
+          </h2>
           <p className="section-description mt-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
@@ -41,11 +44,10 @@ export const CallToAction = () => {
         </div>
       </div>
       <div className="flex gap-2 mt-10 justify-center">
-        <button className="btn btn-primary">Get for free</button>
-        <button className="btn btn-text gap-1">
-          <span>Learn more</span>
+        <a href="#start" className="btn btn-text gap-1">
+          <span>В начало</span>
           <ArrowRight className="h-5 w-5" />
-        </button>
+        </a>
       </div>
     </section>
   );

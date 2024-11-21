@@ -16,20 +16,18 @@ export const ProductShowcase = () => {
     <section
       ref={sectionRef}
       className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DFF] py-24 overflow-x-clip"
+      id="product"
     >
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">
-            <div className="tag">Патенты патенты патенты</div>
+            <div className="tag">Приложение</div>
           </div>
-          <h2 className="section-title mt-5">
-            Очень много патентов и патентов
-          </h2>
+          <h2 className="section-title mt-5">Аналитика патентов</h2>
           <p className="section-description mt -5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
-            vel doloribus repellat ad, nemo, incidunt quibusdam totam quos ex
-            nisi porro suscipit earum. Officiis recusandae asperiores repellat
-            dolorum. Amet, saepe?
+            Приложение помогает подбирать и анализировать меры поддержки и
+            патентный ландшафт. Реализована возможность автоматизированной
+            выгрузки результатов анализа.
           </p>
         </div>
         <div className="relative">
